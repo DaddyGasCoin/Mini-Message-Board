@@ -1,0 +1,12 @@
+extends layout
+
+block content
+   .form-wrapper
+    form(method='POST' action='/new')
+        .row-wrap
+          label(for='user') Name
+          input#user(type='text' name='user')
+        .row-wrap
+          label(for='text') Details
+          input#text(type='text' name ='text')
+        button(type='submit') Submit

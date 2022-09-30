@@ -1,0 +1,12 @@
+extends layout
+
+block content
+     .wrapper
+      .header MINI MESSAGE BOARD
+      .content-wrapper
+        each message in messages 
+          .message-wrap
+            .text #{message.text}
+            .name #{message.user}
+            .date #{message.added}
+        a.button(href='/new') New message
